@@ -6,13 +6,19 @@
 
  body{
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
- }
+
+}
+
+
+/*  NavBar */
 
 nav{
+  width: 300px;
   margin-top: 10px;
   margin-left: 50px;
   display: flex;
   flex-direction: column;
+  border-right: 1px solid rgb(221, 221, 221);
   
 }
 
@@ -33,6 +39,7 @@ ul{
 
 .icon1{
   padding-left:10px ;
+  margin-bottom: 20px;
 }
 
 .iconTwitter{
@@ -43,6 +50,7 @@ ul{
   align-items: center;
   padding-left: 10px;
   cursor: pointer;
+  
 }
 
 .iconTwitter:hover{
@@ -72,4 +80,45 @@ h2{
   border: none;
   cursor: pointer;
   font-size: 16px;
+}
+
+/* Main */
+header{
+  display: flex;
+  flex-direction: row;
+  width: 600px;
+  height: 55px;
+  align-items: center;
+  border: 1px solid rgb(221, 221, 221);
+}
+
+
+/* aside */
+
+aside{
+  width: 400px;
+  border-left: 1px solid rgb(221, 221, 221);
+}
+
+.serch{
+display: flex;
+flex-direction: row;
+align-items: center;
+color:  rgb(91, 112, 131);
+border-radius: 20px;
+background-color: rgb(238, 238, 238);
+border: none;
+padding: 10px;
+margin-left: 10px;
+margin-top: 10px;
+}
+
+
+.serch img{
+  width: 20px;
+  height: 20px;
+}
+
+.searchP{
+margin-left: 15px;
 }
