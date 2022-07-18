@@ -1,18 +1,18 @@
 import React from 'react';
 import './App.css';
 import {HolaMundo} from './HolaMundo'
-import {NavBar} from './NavBar'
-import {Twitts} from './Twitts'
+import {NavBar} from './components/NavBar'
+
+
 
 function App() {
   return (
     <div className="App">
-      <NavBar />
-      <HolaMundo />
-      <Twitts />
-      <Twitts />
-      <Twitts />
-      <Twitts />
+      <NavBar /> {/* componente funcional */}
+      <HolaMundo /> {/* componentes de clase */}
+ 
+     
+      
 
     </div>
   );

@@ -4,6 +4,10 @@
   box-sizing: border-box;
  }
 
+ body{
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+ }
+
 nav{
   margin-top: 10px;
   margin-left: 50px;
@@ -17,7 +21,55 @@ ul{
 }
 
 .logo{
-  width: 50px;
-  height: 40px;
+  width: 30px;
+  height: 25px;
   
+}
+
+.icono{
+  width: 30px;
+  height: 30px;
+}
+
+.icon1{
+  padding-left:10px ;
+}
+
+.iconTwitter{
+  display: flex;
+  flex-direction: row;
+  width: 250px;
+  height: 55px;
+  align-items: center;
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+.iconTwitter:hover{
+  background-color:rgba(24,161,242,0.1);
+  color:#1da1f2;
+}
+
+h2{
+  font-size: 1.5rem;
+  margin-left: 10px;
+  
+}
+
+.icono{
+  fill:currentColor;
+}
+.icono:hover{
+  color:#1da1f2;
+}
+
+.btnTweet{
+  background-color: #1da1f2;
+  color: white;
+  height: 46px;
+  width: 250px;
+  border-radius: 9999px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
 }
