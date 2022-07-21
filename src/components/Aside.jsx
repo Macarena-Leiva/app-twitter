@@ -4,7 +4,7 @@ import search from '../img/search.png'
 export class Aside extends React.Component {
     render() {
       return <aside>
-        <div className="serch"><img src={search} alt="Search" /><p className="searchP">Search Twitter</p> </div>
+        <div className="searchBox"><img src={search} alt="Search" /><input className="search" type="search" name="" id="" placeholder="Search Twitter" /></div>
       </aside>;
     }
   }
