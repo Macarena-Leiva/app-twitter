@@ -10,16 +10,18 @@
 }
 
 
+
 /*  NavBar */
 
-nav{
+
+
+.menu{
   width: 300px;
   margin-top: 10px;
-  margin-left: 50px;
   display: flex;
   flex-direction: column;
-  border-right: 1px solid rgb(221, 221, 221);
-  
+
+ border-left:2px solid rgb(221, 221, 221); 
 }
 
 ul{
@@ -40,9 +42,27 @@ ul{
   transform: scale(1.2);
 }
 
+
+
 .icono{
   width: 30px;
   height: 30px;
+}
+
+.icon1{
+  display: flex;
+  flex-direction: row;
+  width: 250px;
+  height: 55px;
+  align-items: center;
+  cursor: pointer;
+  
+}
+
+.icon1:hover{
+  
+  border-radius: 100px;
+  border:3px solid #4cd3f1;
 }
 
 
@@ -90,6 +110,7 @@ h2{
   font-size: 20px;
   width: 250px;  
   border: none;
+  cursor: pointer;
 }         
 
 
@@ -98,17 +119,48 @@ h2{
   color: #fff;
   text-decoration: none;
 }
+
+.user1{
+  width: 50px;
+}
+
+.textUser{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
             
 
 
 /* Main */
+
+main{
+  display: block;
+  height: 700px;
+  overflow-y: scroll;
+  width: 500px;
+  border-right: 1px solid rgb(221, 221, 221);
+  border-left: 1px solid rgb(221, 221, 221);
+ 
+
+}
+
+::-webkit-scrollbar{
+  display: none;
+}
+
 header{
   display: flex;
   flex-direction: row;
-  width: 600px;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom:1px solid rgb(207, 205, 205);
   height: 55px;
   align-items: center;
-  border: 1px solid rgb(221, 221, 221);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: rgb(255, 255, 255);
 }
 
 
@@ -116,7 +168,8 @@ header{
 
 aside{
   width: 400px;
-  border-left: 1px solid rgb(221, 221, 221);
+  
+ 
 }
 
 .searchBox{
@@ -128,12 +181,9 @@ border-radius: 20px;
 background-color: rgb(238, 238, 238);
 border: none;
 padding: 10px;
-margin-left: 10px;
+margin-left: 50px;
 margin-top: 10px;
 }
-
-
-
 
 .searchBox img{
   width: 20px;
@@ -149,27 +199,89 @@ background-color: rgb(238, 238, 238);
 outline: none;
 }
 
+.explore{
+  background-color: rgba(91, 112, 131, 0.13);
+  width:350px ;
+  height: 600px;
+  border-radius: 20px;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+
+.textExplore {
+  font-weight: bold;
+  padding: 15px;
+}
+
+.box1{
+  display: flex;
+  flex-direction:row;
+  margin: 20px;
+  width: 320px;
+  height: 100px;
+  font-size: 15px;
+  
+}
+
+.box2{
+  display: flex;
+  flex-direction: column;
+  
+ 
+ 
+ 
+}
+
+.box3{
+  width: 190px;
+  height: 100px;
+  
+}
+
+.imgDolar{
+  float:right;
+  cursor: pointer;
+
+}
+.imgDolar:hover{
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.textN{
+  width: 210px;
+  height: 150px;
+
+}
+.colorAzul{
+  color: #1da1f2;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.colorAzul:hover{
+  color: #E55D87;
+}
+
 
 
 /* main */
 
-header{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
 
-.star{
-  margin-right: 10px;
-}
+
+
 
 .perfilM{
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  margin: 20px;
+ padding: 20px;
+ 
+}
+
+.user{
+  width: 50px;
 }
 
 .pregunta{
@@ -185,9 +297,9 @@ header{
 .iconitos{
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-around;
   align-items: center;
-  margin-left: 10%;
+  padding-left: 10%;
 }
 
 .ico{
@@ -217,7 +329,7 @@ header{
   height: 35px;
   border: none;
   font-size: 16px;
-  margin-left: 50%;
+ 
   cursor: pointer;
 }         
 
@@ -233,8 +345,8 @@ display: flex;
 flex-direction: row;
 justify-content: flex-start;
 align-items: center;
-margin-left: 20px;
-margin-top: 30px
+
+
 }
 
 .colorGris{
@@ -245,29 +357,248 @@ margin-top: 30px
   margin-left: 30px;
 }
 
-.boxPadreTweet{
-  display: flex;
-  flex-direction: column;
-}
+
 
 .boxText{
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
+
+
+
 }
 .textoTweet{
-  width: 400px;
+  min-width: 400px;
   height: 100px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+ 
   
 }
 
+
+
 .imgDevjump{
-  width:400px ;
-  height: 300px;
-  margin-top: 20px;
+  max-width:400px ;
+  height: 400px;
+  
+}
+
+.imgPerfil{
+  width:50px;
+  border-radius:100px;
+  
+}
+
+.boxIcon{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+ 
+  margin: 15px;
+
+}
+
+.iconoTweet{
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.iconoTweet:hover{
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.mobile{
+  display: none;
+}
+
+.perfilMobile{
+  display: none;
+}
+
+.iconMobile{
+  display: none;
+}
+
+.textoTweet{
+  padding-left: 50px;
+}
+
+.iconitos{
+  padding-bottom: 15px;
+   border-bottom:2px solid #7575754d;
+  }
+
+
+
+@media (max-width:1125px){
+
+ 
+ .menu{
+  width: 200px;
+ }
+
+ aside{
+  display:none;
+ }
+
+ .user1{
+  width: 40px;
+ }
+
+  .textNav{
+    display: none;
+  }
+  .btnTweet{
+    width: 200px;
+  }
+
+
+
+  .iconTwitter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+  }
+
+  .icon1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  width: 200px;
+  }
+
+
+
+ 
+
+  
+
+ ul .centrar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+ 
+
+  .textUser{
+    display: none;
+  }
+
+.textoTweet{
+  padding-left: 40px;
+  padding-right: 10px;
+}
+
+.iconitos{
+  padding-bottom: 15px;
+   border-bottom:2px solid #7575754d;
+  }
+
+
+}
+
+@media(max-width:630px){
+  nav{
+    display: none;
+  }
+
+  aside{
+    display: none;
+  }
+
+  .menu{
+    display: none;
+  }
+
+  .home{
+    display: none;
+  }
+
+ .iconitos{
+ padding-bottom: 15px;
+  border-bottom:2px solid #7575754d;
+ }
+
+  header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+    
+    background-color: rgb(255, 255, 255);
+  }
+
+  .perfilMobile{
+    width: 40px;
+    height: 40px;
+    display: block;
+  }
+
+
+
+
+ 
+    .textoTweet{
+    min-width: 250px;
+     height: auto;
+      display: flex;
+      flex-direction: column;
+      padding-left: 35px;
+      padding-right: 20px;
+      
+      
+     
+      
+    }
+    
+    .imgDevjump{
+      width:250px ;
+      height: 250px;
+      
+    
+    }
+    
+    .imgPerfil{
+      width:40px;
+      border-radius:100px;
+      margin-left: 5px;
+    }
+    
+    .boxIcon{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+     align-items: center;
+      width: auto;
+      margin-top: 20px;
+     
+     
+    
+    }
+
+    .boxText{
+      margin-left: 18px;
+    }
+
+ 
+    .boxPadreTweet{
+      margin-top: 15px;
+      font-size: 12px;
+      
+    }
+
+
 }

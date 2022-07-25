@@ -1,16 +1,26 @@
-import logoArbusta from '../img/logoArbusta.png'
-import imgTweet from '../img/imgTweet.png'
+import {IconTweet} from './IconTweet'
+import message from '../img/message.png'
+import retweet from '../img/retweet.png'
+import heart from '../img/heart.png'
+import upload from '../img/upload.png'
 
-export const Tweet = () =>{
+export const Tweet = ({perfil,nombre,cuenta,publicacion,img=false,descripcion=''}) =>{
     return(
         <div className='boxPadreTweet'>
         <div className='boxTweet'>
-            <img src={logoArbusta} alt="logo-arbusta" />
-            <p className='nombrePerfil'>Arbusta<span className='colorGris'>@arbustaIT · Jul 18</span></p>
+            <img className='imgPerfil' src={perfil} alt="logo-arbusta" />
+            <p className='nombrePerfil'>{nombre}<span className='colorGris'>{cuenta}</span></p>
         </div>
         <div className='boxText' >
-            <p className='textoTweet'>Desde Arbusta brindamos servicios de primer nivel para acompañar a las empresas en sus procesos de #TransformacionDigital: QA & Software Testing, Data Services & Machine Learning Training, Customer Experience y Desarrollo de Equipos de IT.</p>
-            <img className='imgDevjump' src={imgTweet} alt="imagen Devjump" />
+            <p className='textoTweet'>{publicacion}</p>
+            {img ? <img className='imgDevjump' src={img} alt={descripcion} /> : false}
+        </div>
+         <div className='boxIcon'>
+            <IconTweet icono={message} />
+            <IconTweet icono={retweet} />
+            <IconTweet icono={heart} />
+            <IconTweet icono={upload} />
+        
         </div>
         </div>
     )

@@ -1,5 +1,5 @@
 import React from "react";
-import logo from '../img/logo.png';
+
 import { IconoHome } from '../iconosNavBar/IconoHome'
 import { IconoExplore } from "../iconosNavBar/IconoExplore";
 import { IconoNotification } from "../iconosNavBar/IconoNotification";
@@ -8,22 +8,43 @@ import { IconoBookmarks } from "../iconosNavBar/IconoBookmarks";
 import { IconoLists } from "../iconosNavBar/IconoLists";
 import { IconoProfile } from "../iconosNavBar/IconoProfile";
 import { IconoMore } from "../iconosNavBar/IconoMore";
+import user from '../img/user.png'
 
 export class NavBar extends React.Component {
     render() {
-      return <nav>
-        <ul>
-            <li className="icon1"><img className="logo" src={logo} alt="" /></li>
-            <li className="iconTwitter"><IconoHome /><h2>Home</h2></li>
-            <li className="iconTwitter"><IconoExplore /><h2>Explore</h2></li>
-            <li className="iconTwitter"><IconoNotification /><h2>Notifications</h2></li>
-            <li className="iconTwitter"><IconoMessages /><h2>Messages</h2></li>
-            <li className="iconTwitter"><IconoBookmarks /><h2>Bookmarks</h2></li>
-            <li className="iconTwitter"><IconoLists /> <h2>Lists</h2> </li>
-            <li className="iconTwitter"><IconoProfile /><h2>Profile</h2></li>
-            <li className="iconTwitter"><IconoMore /><h2>More</h2></li>
+      return (
+        <div className="padreNav">
+      <nav className="menu">
+        <ul className="centrar">
+            <li className="icon1"><img className="user1" src={user} alt="perfil" /><div className="textUser"><h2 >Maca Leiva</h2><p className="colorGris">@Mak_leiva</p></div></li>
+            <li className="iconTwitter"><IconoHome /><h2 className="textNav">Home</h2></li>
+            <li className="iconTwitter"><IconoExplore /><h2 className="textNav">Explore</h2></li>
+            <li className="iconTwitter"><IconoNotification /><h2 className="textNav">Notifications</h2></li>
+            <li className="iconTwitter"><IconoMessages /><h2 className="textNav">Messages</h2></li>
+            <li className="iconTwitter"><IconoBookmarks /><h2 className="textNav">Bookmarks</h2></li>
+            <li className="iconTwitter"><IconoLists /> <h2 className="textNav">Lists</h2> </li>
+            <li className="iconTwitter"><IconoProfile /><h2 className="textNav">Profile</h2></li>
+            <li className="iconTwitter"><IconoMore /><h2 className="textNav">More</h2></li>
             <button className='btnTweet'>Tweet</button>
         </ul>
       </nav>
+
+<nav className="mobile">
+<ul>
+    
+    <li className="iconTwitter"><IconoHome /><h2 className="textNav">Home</h2></li>
+    <li className="iconTwitter"><IconoExplore /><h2 className="textNav">Explore</h2></li>
+    <li className="iconTwitter"><IconoNotification /><h2 className="textNav">Notifications</h2></li>
+    <li className="iconTwitter"><IconoMessages /><h2 className="textNav">Messages</h2></li>
+    <li className="iconTwitter"><IconoBookmarks /><h2 className="textNav">Bookmarks</h2></li>
+    <li className="iconTwitter"><IconoLists /> <h2 className="textNav">Lists</h2> </li>
+    <li className="iconTwitter"><IconoProfile /><h2 className="textNav">Profile</h2></li>
+    <li className="iconTwitter"><IconoMore /><h2 className="textNav">More</h2></li>
+    <button className='btnTweet'>Tweet</button>
+</ul>
+</nav>
+</div>
+
+      )
     }
   }
