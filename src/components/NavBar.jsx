@@ -30,18 +30,16 @@ export class NavBar extends React.Component {
       </nav>
 
 <nav className="mobile">
-<ul>
+<ul className="centrate">
     
-    <li className="iconTwitter"><IconoHome /><h2 className="textNav">Home</h2></li>
-    <li className="iconTwitter"><IconoExplore /><h2 className="textNav">Explore</h2></li>
-    <li className="iconTwitter"><IconoNotification /><h2 className="textNav">Notifications</h2></li>
-    <li className="iconTwitter"><IconoMessages /><h2 className="textNav">Messages</h2></li>
-    <li className="iconTwitter"><IconoBookmarks /><h2 className="textNav">Bookmarks</h2></li>
-    <li className="iconTwitter"><IconoLists /> <h2 className="textNav">Lists</h2> </li>
-    <li className="iconTwitter"><IconoProfile /><h2 className="textNav">Profile</h2></li>
-    <li className="iconTwitter"><IconoMore /><h2 className="textNav">More</h2></li>
-    <button className='btnTweet'>Tweet</button>
+    <li className="iconTwitter"><IconoHome /></li>
+    <li className="iconTwitter"><IconoExplore /></li>
+    <li className="iconTwitter"><IconoNotification /></li>
+    <li className="iconTwitter"><IconoMessages /></li>
+ 
+    
 </ul>
+
 </nav>
 </div>
 

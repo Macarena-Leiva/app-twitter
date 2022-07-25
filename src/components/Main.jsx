@@ -30,6 +30,7 @@ export const Main = () => {
           </div>
           <div>
           <button className="btnMain">Tweet</button>
+          <button className='btnTweetMobile'>+</button>
           </div>
         </div>
         <Tweet perfil={logoArbusta} nombre='Arbusta' cuenta='@arbustaIT · Jul 18' publicacion='Desde Arbusta brindamos servicios de primer nivel para acompañar a las empresas en sus procesos de #TransformacionDigital: QA & Software Testing, Data Services & Machine Learning Training, Customer Experience y Desarrollo de Equipos de IT.' img={imgTweet} descripcion='devjump'/>

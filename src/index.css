@@ -10,7 +10,6 @@
 }
 
 
-
 /*  NavBar */
 
 
@@ -20,8 +19,7 @@
   margin-top: 10px;
   display: flex;
   flex-direction: column;
-
- border-left:2px solid rgb(221, 221, 221); 
+  border-left:2px solid rgb(221, 221, 221); 
 }
 
 ul{
@@ -139,8 +137,8 @@ main{
   height: 700px;
   overflow-y: scroll;
   width: 500px;
-  border-right: 1px solid rgb(221, 221, 221);
-  border-left: 1px solid rgb(221, 221, 221);
+  border-right: 2px solid rgb(221, 221, 221);
+  border-left: 2px solid rgb(221, 221, 221);
  
 
 }
@@ -149,18 +147,24 @@ main{
   display: none;
 }
 
+.btnTweetMobile{
+  display: none;
+}
+
 header{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  border-bottom:1px solid rgb(207, 205, 205);
+ 
   height: 55px;
   align-items: center;
   position: sticky;
   top: 0;
   z-index: 100;
   background-color: rgb(255, 255, 255);
+ 
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
 }
 
 
@@ -358,16 +362,13 @@ align-items: center;
 }
 
 
-
 .boxText{
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-
-
-
 }
+
 .textoTweet{
   min-width: 400px;
   height: 100px;
@@ -375,11 +376,7 @@ align-items: center;
   flex-direction: column;
   margin-top: 10px;
   margin-bottom: 10px;
- 
-  
 }
-
-
 
 .imgDevjump{
   max-width:400px ;
@@ -455,10 +452,10 @@ align-items: center;
   .textNav{
     display: none;
   }
+
   .btnTweet{
     width: 200px;
   }
-
 
 
   .iconTwitter {
@@ -476,12 +473,6 @@ align-items: center;
     align-items: center;
   width: 200px;
   }
-
-
-
- 
-
-  
 
  ul .centrar{
     display: flex;
@@ -509,7 +500,7 @@ align-items: center;
 
 }
 
-@media(max-width:630px){
+@media(max-width:600px){
   nav{
     display: none;
   }
@@ -526,18 +517,20 @@ align-items: center;
     display: none;
   }
 
- .iconitos{
- padding-bottom: 15px;
-  border-bottom:2px solid #7575754d;
- }
+  .iconitos{
+    padding-bottom: 15px;
+    border-bottom:2px solid #7575754d;
+  }
+
+  main{
+    margin-bottom: 100px;
+  }
 
   header{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    
-    
     background-color: rgb(255, 255, 255);
   }
 
@@ -547,58 +540,83 @@ align-items: center;
     display: block;
   }
 
-
-
-
- 
-    .textoTweet{
+  .textoTweet{
     min-width: 250px;
-     height: auto;
-      display: flex;
-      flex-direction: column;
-      padding-left: 35px;
-      padding-right: 20px;
-      
-      
-     
-      
-    }
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding-left: 35px;
+    padding-right: 20px;  
+  }
     
-    .imgDevjump{
-      width:250px ;
-      height: 250px;
-      
+  .imgDevjump{
+    width:250px ;
+    height: 250px;
+  }
     
-    }
+  .imgPerfil{
+    width:60px;
+    border-radius:100px;
+    margin-left: 5px;
+  }
     
-    .imgPerfil{
-      width:40px;
-      border-radius:100px;
-      margin-left: 5px;
-    }
-    
-    .boxIcon{
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-     align-items: center;
-      width: auto;
-      margin-top: 20px;
-     
-     
-    
-    }
+  .boxIcon{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: auto;
+    margin-top: 20px;
+  }
 
-    .boxText{
-      margin-left: 18px;
-    }
+  .boxText{
+    margin-left: 18px;
+  }
 
  
-    .boxPadreTweet{
-      margin-top: 15px;
-      font-size: 12px;
-      
-    }
+  .boxPadreTweet{
+    margin-top: 15px;
+    font-size: 16px;
+  }
 
+  .mobile{
+    display: block;
+    padding: 10px;
+    border-top:1px solid #8f8f9087;
+    background-color: #fff; 
+  }
+
+  .centrate{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;  
+  }
+
+  .padreNav{
+    max-width: 500px;
+    position: fixed;
+    bottom: 0;
+  }
+
+  .btnTweetMobile{
+    display: block;
+    float: right;
+    position: fixed;
+    bottom: 90px;
+    border: none;
+    border-radius: 100px;
+    width: 65px;
+    height: 65px;
+    background-color: #e85080;
+    cursor: pointer;
+    font-size: 40px;
+    color: #fff;
+    right: 20px;   
+  }
+
+  .btnTweetMobile:hover{
+    background-color: #1da1f2;
+  }
 
 }

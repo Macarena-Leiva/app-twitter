@@ -3,3 +3,16 @@
     flex-direction: row;
    justify-content: center;
 }
+
+@media(max-width:500px){
+   .app{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+   }
+
+ 
+
+ 
+}
