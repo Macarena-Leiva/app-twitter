@@ -9,9 +9,9 @@ import {Main} from './components/Main'
 function App() {
   return (
     <div className="app">
-      <NavBar /> {/* componente de clase */}
-      <Main />  {/* componente de clase */}
-      <Explore />  {/* componentes de clase */}
+      <NavBar /> 
+      <Main /> 
+      <Explore />  
  
     </div>
   );
