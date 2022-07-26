@@ -30,9 +30,10 @@ export const Main = () => {
           </div>
           <div>
           <button className="btnMain">Tweet</button>
-          <button className='btnTweetMobile'>+</button>
+          
           </div>
         </div>
+        <button className='btnTweetMobile'>+</button>
         <Tweet perfil={logoArbusta} nombre='Arbusta' cuenta='@arbustaIT · Jul 18' publicacion='Desde Arbusta brindamos servicios de primer nivel para acompañar a las empresas en sus procesos de #TransformacionDigital: QA & Software Testing, Data Services & Machine Learning Training, Customer Experience y Desarrollo de Equipos de IT.' img={imgTweet} descripcion='devjump'/>
         <Tweet perfil={imgReact} nombre='React' cuenta='@reactjs · Mar 29' publicacion='Our latest major version includes out-of-the-box improvements like automatic batching, new APIs like startTransition, and streaming server-side rendering with support for Suspense.' img={false}  />
         <Tweet perfil={mirta} nombre='Mirtha Legrand' cuenta='@mirthalegrand · May 27' publicacion='Quiero contarles que mi test del día de hoy dio negativo de COVID. Muchas gracias a todos por preocuparse y ¡por las infinitas muestras de cariño!❤️ ¡A seguir cuidándose con responsabilidad!¡chau chau!🌹' img={false} />
