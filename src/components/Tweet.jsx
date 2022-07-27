@@ -3,6 +3,7 @@ import message from '../img/message.png'
 import retweet from '../img/retweet.png'
 import heart from '../img/heart.png'
 import upload from '../img/upload.png'
+import mas from '../img/mas.png'
 
 export const Tweet = ({perfil,nombre,cuenta,publicacion,img=false,descripcion=''}) =>{
     return(
@@ -10,6 +11,7 @@ export const Tweet = ({perfil,nombre,cuenta,publicacion,img=false,descripcion=''
         <div className='boxTweet'>
             <img className='imgPerfil' src={perfil} alt="logo-arbusta" />
             <p className='nombrePerfil'>{nombre}<span className='colorGris'>{cuenta}</span></p>
+            <div className='masTweet'><img src={mas} alt="mas" /></div>
         </div>
         <div className='boxText' >
             <p className='textoTweet'>{publicacion}</p>
