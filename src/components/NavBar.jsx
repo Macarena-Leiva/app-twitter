@@ -10,8 +10,7 @@ import { IconoProfile } from "../iconosNavBar/IconoProfile";
 import { IconoMore } from "../iconosNavBar/IconoMore";
 import user from '../img/user.png'
 
-export class NavBar extends React.Component {
-    render() {
+export const NavBar = () => {
       return (
         <div className="padreNav">
       <nav className="menu">
@@ -45,4 +44,4 @@ export class NavBar extends React.Component {
 
       )
     }
-  }
+  
